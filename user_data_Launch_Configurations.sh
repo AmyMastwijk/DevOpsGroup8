@@ -15,4 +15,5 @@ sudo systemctl enable docker
 sudo usermod -a -G docker ec2-user
 
 # Run the Docker container
+docker pull amymastwijk/supply-image
 docker run -d -p 80:8080 --name supply-image --restart unless-stopped amymastwijk/supply-image
